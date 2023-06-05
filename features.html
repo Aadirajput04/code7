@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en" class="astro-SCKKX6R4">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="Astro v2.0.2">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="/img/mixo-logo.svg" type="image/x-icon">
+
+    <title>Mixo | Launch your startup in seconds</title>
+
+
+
+    <link rel="canonical" href="https://www.mixo.io/features/">
+
+
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mixo.io/img/social-banner.png">
+    <meta property="og:url" content="https://mixo.io">
+
+
+
+
+
+
+
+    <meta property="og:image:url" content="https://mixo.io/img/social-banner.png">
+
+
+
+    <meta property="og:image:height">
+    <meta property="og:image:alt" content="">
+
+
+
+
+    <meta name="twitter:image" content="https://mixo.io/img/social-banner.png">
+
+
+    <meta name="twitter:creator" content="@mixoteam">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/_astro/affiliates.0ef788b5.css" />
+    <link rel="stylesheet" href="/_astro/privacy.5bb281f5.css" />
+    <link rel="stylesheet" href="/_astro/affiliates.5b2efc58.css" />
+    <link rel="stylesheet" href="/_astro/features.f41b2850.css" />
+    <link rel="stylesheet" href="/_astro/index.22eb11bc.css" />
+    <script nonce="36abc4f2-3b6e-4d02-8fd0-c4829abb8286">
+        (function (w, d) {
+            ! function (Y, Z, _, ba) {
+                Y[_] = Y[_] || {};
+                Y[_].executed = [];
+                Y.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                Y.zaraz.q = [];
+                Y.zaraz._f = function (bb) {
+                    return function () {
+                        var bc = Array.prototype.slice.call(arguments);
+                        Y.zaraz.q.push({
+                            m: bb,
+                            a: bc
+                        })
+                    }
+                };
+                for (const bd of ["track", "set", "debug"]) Y.zaraz[bd] = Y.zaraz._f(bd);
+                Y.zaraz.init = () => {
+                    var be = Z.getElementsByTagName(ba)[0],
+                        bf = Z.createElement(ba),
+                        bg = Z.getElementsByTagName("title")[0];
+                    bg && (Y[_].t = Z.getElementsByTagName("title")[0].text);
+                    Y[_].x = Math.random();
+                    Y[_].w = Y.screen.width;
+                    Y[_].h = Y.screen.height;
+                    Y[_].j = Y.innerHeight;
+                    Y[_].e = Y.innerWidth;
+                    Y[_].l = Y.location.href;
+                    Y[_].r = Z.referrer;
+                    Y[_].k = Y.screen.colorDepth;
+                    Y[_].n = Z.characterSet;
+                    Y[_].o = (new Date).getTimezoneOffset();
+                    if (Y.dataLayer)
+                        for (const bk of Object.entries(Object.entries(dataLayer).reduce(((bl, bm) => ({
+                            ...bl[1],
+                            ...bm[1]
+                        })), {}))) zaraz.set(bk[0], bk[1], {
+                            scope: "page"
+                        });
+                    Y[_].q = [];
+                    for (; Y.zaraz.q.length;) {
+                        const bn = Y.zaraz.q.shift();
+                        Y[_].q.push(bn)
+                    }
+                    bf.defer = !0;
+                    for (const bo of [localStorage, sessionStorage]) Object.keys(bo || {}).filter((bq => bq.startsWith("_zaraz_"))).forEach((bp => {
+                        try {
+                            Y[_]["z_" + bp.slice(7)] = JSON.parse(bo.getItem(bp))
+                        } catch {
+                            Y[_]["z_" + bp.slice(7)] = bo.getItem(bp)
+                        }
+                    }));
+                    bf.referrerPolicy = "origin";
+                    bf.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(Y[_])));
+                    be.parentNode.insertBefore(bf, be)
+                };
+                ["complete", "interactive"].includes(Z.readyState) ? zaraz.init() : Y.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        })(window, document);
+    </script>
+</head>
+
+<body class=" astro-SCKKX6R4">
+    <style>
+        astro-island,
+        astro-slot {
+            display: contents
+        }
+    </style>
+    <script>
+        (self.Astro = self.Astro || {}).only = t => {
+            (async () => await (await t())())()
+        }, window.dispatchEvent(new Event("astro:only"));
+        var l; {
+            const c = {
+                0: t => t,
+                1: t => JSON.parse(t, o),
+                2: t => new RegExp(t),
+                3: t => new Date(t),
+                4: t => new Map(JSON.parse(t, o)),
+                5: t => new Set(JSON.parse(t, o)),
+                6: t => BigInt(t),
+                7: t => new URL(t),
+                8: t => new Uint8Array(JSON.parse(t)),
+                9: t => new Uint16Array(JSON.parse(t)),
+                10: t => new Uint32Array(JSON.parse(t))
+            },
+                o = (t, s) => {
+                    if (t === "" || !Array.isArray(s)) return s;
+                    const [e, n] = s;
+                    return e in c ? c[e](n) : void 0
+                };
+            customElements.get("astro-island") || customElements.define("astro-island", (l = class extends HTMLElement {
+                constructor() {
+                    super(...arguments);
+                    this.hydrate = () => {
+                        if (!this.hydrator || this.parentElement && this.parentElement.closest("astro-island[ssr]")) return;
+                        const s = this.querySelectorAll("astro-slot"),
+                            e = {},
+                            n = this.querySelectorAll("template[data-astro-template]");
+                        for (const r of n) {
+                            const i = r.closest(this.tagName);
+                            !i || !i.isSameNode(this) || (e[r.getAttribute("data-astro-template") || "default"] = r.innerHTML, r.remove())
+                        }
+                        for (const r of s) {
+                            const i = r.closest(this.tagName);
+                            !i || !i.isSameNode(this) || (e[r.getAttribute("name") || "default"] = r.innerHTML)
+                        }
+                        const a = this.hasAttribute("props") ? JSON.parse(this.getAttribute("props"), o) : {};
+                        this.hydrator(this)(this.Component, a, e, {
+                            client: this.getAttribute("client")
+                        }), this.removeAttribute("ssr"), window.removeEventListener("astro:hydrate", this.hydrate), window.dispatchEvent(new CustomEvent("astro:hydrate"))
+                    }
+                }
+                connectedCallback() {
+                    !this.hasAttribute("await-children") || this.firstChild ? this.childrenConnectedCallback() : new MutationObserver((s, e) => {
+                        e.disconnect(), this.childrenConnectedCallback()
+                    }).observe(this, {
+                        childList: !0
+                    })
+                }
+                async childrenConnectedCallback() {
+                    window.addEventListener("astro:hydrate", this.hydrate);
+                    let s = this.getAttribute("before-hydration-url");
+                    s && await
+                        import(s), this.start()
+                }
+                start() {
+                    const s = JSON.parse(this.getAttribute("opts")),
+                        e = this.getAttribute("client");
+                    if (Astro[e] === void 0) {
+                        window.addEventListener(`astro:${e}`, () => this.start(), {
+                            once: !0
+                        });
+                        return
+                    }
+                    Astro[e](async () => {
+                        const n = this.getAttribute("renderer-url"),
+                            [a, {
+                                default: r
+                            }] = await Promise.all([
+                                import(this.getAttribute("component-url")), n ?
+                                    import(n) : () => () => { }
+                            ]),
+                            i = this.getAttribute("component-export") || "default";
+                        if (!i.includes(".")) this.Component = a[i];
+                        else {
+                            this.Component = a;
+                            for (const d of i.split(".")) this.Component = this.Component[d]
+                        }
+                        return this.hydrator = r, this.hydrate
+                    }, s, this)
+                }
+                attributeChangedCallback() {
+                    this.hydrator && this.hydrate()
+                }
+            }, l.observedAttributes = ["props"], l))
+        }
+    </script>
+    <astro-island uid="1gtgP9" component-url="/_astro/MainNav.81dc6801.js" component-export="default"
+        renderer-url="/_astro/client.98e404ee.js"
+        props="{&quot;ctaLabel&quot;:[0,&quot;Get Started for Free&quot;],&quot;ctaLink&quot;:[0,&quot;https://app.mixo.io&quot;],&quot;class&quot;:[0,&quot;astro-SCKKX6R4&quot;]}"
+        ssr="" client="only"
+        opts="{&quot;name&quot;:&quot;MainNav&quot;,&quot;value&quot;:&quot;vue&quot;}"></astro-island>
+
+    <script>
+        (self.Astro = self.Astro || {}).load = a => {
+            (async () => await (await a())())()
+        }, window.dispatchEvent(new Event("astro:load"));
+    </script>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"> <img src="/img/Link.svg" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="features.html">features</a></li>
+
+            <li><a href="#">help</a></li>
+
+        </ul>
+        <div class="button-parent">
+            <div class="button">
+                <a class="sign-in" href="#">Log in</a>
+                <a class="get" href="#">Get started for Free</a>
+            </div>
+        </div>
+    </nav>
+    <main class="astro-FSSWMXCN">
+        <div class="py-12 flex-col-center space-y-24 astro-FSSWMXCN">
+            <div class="flex-col-center space-y-12 lg:space-y-24 astro-FSSWMXCN">
+                <div class="relative astro-FSSWMXCN">
+                    <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+                        <h2 class="text-lg font-semibold text-brand-primary"> Ready to launch, validate and grow<span
+                                class="text-primary">?</span></h2>
+                        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl"> Bursting at the seams with
+                            features 💥 </p>
+                        <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500"> Mixo has all the tools to make it
+                            easy to launch a website. Including… </p>
+                        <div class="divider mt-6"></div>
+                        <div class="mt-12 md:mt-24">
+                            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                <!--[-->
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 24 24" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M3 6.25A3.25 3.25 0 0 1 6.25 3h11.5A3.25 3.25 0 0 1 21 6.25v11.5A3.25 3.25 0 0 1 17.75 21H6.25A3.25 3.25 0 0 1 3 17.75V6.25Zm3.75.5a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H6.75Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Integrated
+                                                Artificial Intelligence</h3>
+                                            <p class="mt-5 text-base text-gray-500">Generate a fully functional website
+                                                in seconds</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 24 24" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M6.25 3A3.25 3.25 0 0 0 3 6.25V11h11V3H6.25ZM3 17.75V12.5h11V21H6.25A3.25 3.25 0 0 1 3 17.75ZM15.5 16v5h2.25A3.25 3.25 0 0 0 21 17.75V16h-5.5Zm5.5-1.5v-5h-5.5v5H21ZM21 8h-5.5V3h2.25A3.25 3.25 0 0 1 21 6.25V8Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">No Coding
+                                                Required</h3>
+                                            <p class="mt-5 text-base text-gray-500">Access Mixo&#39;s site editor to
+                                                customize your site</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 24 24" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <g fill="none">
+                                                            <path
+                                                                d="M7.47 12.28l.084.074a.75.75 0 0 0 .977-.073l2.72-2.72v6.69l.006.102a.75.75 0 0 0 .743.648l.102-.007a.75.75 0 0 0 .648-.743V9.56l2.72 2.721l.085.073a.75.75 0 0 0 .977-1.133l-4-4.002l-.085-.072a.75.75 0 0 0-.976.072L7.47 11.22l-.073.084a.75.75 0 0 0 .073.977z"
+                                                                fill="currentColor"></path>
+                                                            <path
+                                                                d="M22 12c0-5.522-4.476-10-10-10C6.479 2 2 6.479 2 12c0 5.524 4.478 10 10 10c5.524 0 10-4.476 10-10zM3.5 12a8.5 8.5 0 1 1 17 0a8.5 8.5 0 0 1-17 0z"
+                                                                fill="currentColor"></path>
+                                                        </g>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Scalable
+                                                Site Hosting</h3>
+                                            <p class="mt-5 text-base text-gray-500">We host your site on Mixo&#39;s
+                                                Global Content Network</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 20 20" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M3 5.5A2.5 2.5 0 0 1 5.5 3h9A2.5 2.5 0 0 1 17 5.5v4.1a5.465 5.465 0 0 0-1-.393V7H4v7.5A1.5 1.5 0 0 0 5.5 16h3.707c.099.349.23.683.393 1H5.5A2.5 2.5 0 0 1 3 14.5v-9ZM14.5 4h-9A1.5 1.5 0 0 0 4 5.5V6h12v-.5A1.5 1.5 0 0 0 14.5 4Zm0 15a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9Zm2.354-4.854a.5.5 0 1 1-.708.708L15 13.707V16.5a.5.5 0 0 1-1 0v-2.793l-1.146 1.147a.5.5 0 1 1-.708-.707l2-2a.5.5 0 0 1 .351-.147h.006a.498.498 0 0 1 .348.144l.003.003l2 2Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Customize
+                                                Site URL</h3>
+                                            <p class="mt-5 text-base text-gray-500">Connect your own domain name and
+                                                customize your site URL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 48 48" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M24.865 4.348a1.25 1.25 0 0 0-1.73 0c-2.759 2.643-6.685 4.077-10.037 4.84c-1.66.376-3.139.58-4.202.69A29.035 29.035 0 0 1 7.242 10H7.22A1.25 1.25 0 0 0 6 11.25v9.5c0 4.837 1.243 9.658 4.098 13.775c2.861 4.126 7.29 7.469 13.529 9.418c.243.076.503.076.746 0a32.85 32.85 0 0 0 1.641-.56A5.108 5.108 0 0 1 26 43V33a5.002 5.002 0 0 1 4.059-4.912a7.001 7.001 0 0 1 11.776-4.15c.111-.975.165-1.957.165-2.938v-9.75A1.25 1.25 0 0 0 40.78 10h-.022l-.08-.003a29.03 29.03 0 0 1-1.574-.12a35.655 35.655 0 0 1-4.202-.69c-3.353-.762-7.279-2.196-10.037-4.84ZM32 30v-1a5 5 0 0 1 10 0v1h1a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H31a3 3 0 0 1-3-3V33a3 3 0 0 1 3-3h1Zm2.5-1v1h5v-1a2.5 2.5 0 0 0-5 0Zm5.5 9a3 3 0 1 0-6 0a3 3 0 0 0 6 0Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Free SSL
+                                                Certificate</h3>
+                                            <p class="mt-5 text-base text-gray-500">All websites are fully secured with
+                                                SSL certificate</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 24 24" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M8.254 8.003c.967 0 1.75.783 1.75 1.75v9.5a1.75 1.75 0 0 1-1.75 1.75H3.75A1.75 1.75 0 0 1 2 19.253v-9.5c0-.967.784-1.75 1.75-1.75h4.504Zm0 1.5H3.75a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h4.504a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25ZM6.252 17a.75.75 0 0 1 .102 1.493l-.102.007h-.5a.75.75 0 0 1-.102-1.494L5.752 17h.5Zm14.997-.5a.75.75 0 0 1 .102 1.493L21.25 18L11 17.998v-1.5h10.25ZM18.25 5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0 1 18.25 16H11v-1.5h7.25a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25l-.001.249H4V6.75C4 5.784 4.784 5 5.75 5h12.5Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Mobile
+                                                First Responsive Design</h3>
+                                            <p class="mt-5 text-base text-gray-500">All sites designed to work across
+                                                Mobile, Tablet and Desktop</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 24 24" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M12 6.5a5.5 5.5 0 1 0-11 0a5.5 5.5 0 0 0 11 0Zm-8-3v.551a3.5 3.5 0 1 1-.187 4.691C3.55 8.427 3.811 8 4.221 8c.176 0 .339.085.46.213A2.5 2.5 0 1 0 4.5 5h1a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 1 0Zm13.504 5.752a.752.752 0 1 0-1.504 0a.752.752 0 0 0 1.504 0ZM13 6.5a6.5 6.5 0 0 1-9 6.002v6.248c0 .627.178 1.213.485 1.71l6.939-6.813l.135-.122a2.25 2.25 0 0 1 2.889.006l.128.117l6.939 6.811A3.235 3.235 0 0 0 22 18.75V7.25A3.25 3.25 0 0 0 18.75 4h-6.248c.32.77.498 1.614.498 2.5Zm1.5 2.752a2.252 2.252 0 1 1 4.504 0a2.252 2.252 0 0 1-4.504 0Zm-2.025 5.466l.083-.071a.75.75 0 0 1 .874-.007l.093.078l6.928 6.8A3.235 3.235 0 0 1 18.75 22H7.25a3.235 3.235 0 0 1-1.703-.481l6.928-6.801Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Access to
+                                                Free Stock Images</h3>
+                                            <p class="mt-5 text-base text-gray-500">Search and embed free stock
+                                                photography into your site in seconds</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 16 16" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M4.25 2A2.25 2.25 0 0 0 2 4.25v5.5A2.25 2.25 0 0 0 4.25 12h6.5A2.25 2.25 0 0 0 13 9.75v-5.5A2.25 2.25 0 0 0 10.75 2h-6.5ZM6 8.996V5.004a.5.5 0 0 1 .778-.416l2.997 1.996a.5.5 0 0 1 0 .833L6.777 9.413A.5.5 0 0 1 6 8.996ZM6 14a2.496 2.496 0 0 1-2-1h7.25A2.75 2.75 0 0 0 14 10.25V4c.607.456 1 1.182 1 2v4.25A3.75 3.75 0 0 1 11.25 14H6Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Embed
+                                                Video Content</h3>
+                                            <p class="mt-5 text-base text-gray-500">Ability to embed video content from
+                                                YouTube or Vimeo into your websites</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 24 24" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M11 14a3 3 0 1 0 0-6a3 3 0 0 0 0 6ZM3 6.25A3.25 3.25 0 0 1 6.25 3h11.5A3.25 3.25 0 0 1 21 6.25v11.5A3.25 3.25 0 0 1 17.75 21H6.25A3.25 3.25 0 0 1 3 17.75V6.25Zm8 9.25a4.48 4.48 0 0 0 2.607-.832l2.613 2.612a.75.75 0 1 0 1.06-1.06l-2.612-2.613A4.5 4.5 0 1 0 11 15.5Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Search
+                                                Engine Optimization</h3>
+                                            <p class="mt-5 text-base text-gray-500">All sites are SEO-ready to help you
+                                                start ranking on Google</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 24 24" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M11 15.5c0-.563.186-1.082.5-1.5H5.253a2.249 2.249 0 0 0-2.25 2.25v.919c0 .572.18 1.13.511 1.596C5.056 20.929 7.58 22 11 22h.05a2.514 2.514 0 0 1-.05-.5v-6Zm0-13.495a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm6.51 16.922l-5.49-3.203A2 2 0 0 1 14 14h7a2 2 0 0 1 2 1.97l-5.49 2.957Zm.227 1.014l5.264-2.834V21a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2v-4.13l5.248 3.062a.5.5 0 0 0 .489.009Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Unlimited
+                                                Subscribers</h3>
+                                            <p class="mt-5 text-base text-gray-500">Capture leads and get notified as
+                                                they sign up</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 20 20" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M10 8c3.314 0 6-1.343 6-3s-2.686-3-6-3s-6 1.343-6 3s2.686 3 6 3Zm4.69.016c.47-.235.927-.534 1.31-.896v2.087a5.5 5.5 0 0 0-5.745 8.79L10 18c-3.314 0-6-1.343-6-3V7.12c.383.362.84.661 1.31.896C6.562 8.642 8.222 9 10 9c1.778 0 3.438-.358 4.69-.984ZM10 14.5a4.5 4.5 0 1 1 9 0a4.5 4.5 0 0 1-9 0Zm4.854-2.353l-.003-.003a.499.499 0 0 0-.348-.144h-.006a.5.5 0 0 0-.35.146l-2 2a.5.5 0 0 0 .707.708L14 13.707V16.5a.5.5 0 0 0 1 0v-2.793l1.146 1.147a.5.5 0 0 0 .708-.708l-2-2Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Unlimited
+                                                Storage</h3>
+                                            <p class="mt-5 text-base text-gray-500">We don&#39;t cap or charge storage
+                                                fees for site content</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 24 24" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M17 3.002a2.998 2.998 0 1 1-2.148 5.09l-5.457 3.12a3.002 3.002 0 0 1 0 1.577l5.458 3.119a2.998 2.998 0 1 1-.746 1.304l-5.457-3.12a2.998 2.998 0 1 1 0-4.184l5.457-3.12A3 3 0 0 1 17 3.003Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Social
+                                                Sharing Ready</h3>
+                                            <p class="mt-5 text-base text-gray-500">Social images and description
+                                                generated by AI for you</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 24 24" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M5 4.25a.75.75 0 0 0-1.5 0v14.5c0 .966.784 1.75 1.75 1.75h14.5a.75.75 0 0 0 0-1.5H5.25a.25.25 0 0 1-.25-.25V4.25Zm9 2.5a.75.75 0 0 1 .75-.75h5.002a.75.75 0 0 1 .75.75v5.005a.75.75 0 1 1-1.5 0V8.559L13.78 13.78a.75.75 0 0 1-1.06 0l-1.97-1.97l-3.22 3.22a.75.75 0 0 1-1.06-1.06l3.75-3.75a.75.75 0 0 1 1.06 0l1.97 1.97l4.69-4.69h-3.19a.75.75 0 0 1-.75-.75Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Integrated
+                                                Analytics</h3>
+                                            <p class="mt-5 text-base text-gray-500">Ability to integrate Google
+                                                Analytics and Facebook Pixel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 20 20" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M10 6.5V2H5.5A1.5 1.5 0 0 0 4 3.5v7.585c.32.113.589.331.768.613A2.5 2.5 0 0 1 9 13.5c0 .444-.193.843-.5 1.118c.319.425.5.949.5 1.5v.382c0 .563-.186 1.082-.5 1.5h6a1.5 1.5 0 0 0 1.5-1.5V8h-4.5A1.5 1.5 0 0 1 10 6.5Zm1 0V2.25L15.75 7H11.5a.5.5 0 0 1-.5-.5ZM3.5 12a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0V16a.5.5 0 0 0-1 0v.5a1.5 1.5 0 0 0 3 0v-4a.5.5 0 0 0-.5-.5ZM5 13.5a1.5 1.5 0 0 1 3 0a.5.5 0 0 1-1 0a.5.5 0 0 0-1 0v.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 8 16.118v.382a1.5 1.5 0 0 1-3 0a.5.5 0 0 1 1 0a.5.5 0 0 0 1 0v-.382a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 5 13.882V13.5Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Inject
+                                                Custom Scripts</h3>
+                                            <p class="mt-5 text-base text-gray-500">Integrate your Google Tag Manager
+                                                into your websites to allow custom scripting</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                                        <div class="-mt-6">
+                                            <div><span
+                                                    class="inline-flex items-center justify-center rounded-md bg-emerald-300 p-3 shadow-lg"><svg
+                                                        viewBox="0 0 24 24" width="1.2em" height="1.2em"
+                                                        class="h-8 w-8 text-emerald-600" aria-hidden="true">
+                                                        <path fill="currentColor"
+                                                            d="M20 16.246a2.249 2.249 0 0 0-2.25-2.249H6.25A2.249 2.249 0 0 0 4 16.247v.577c0 .893.319 1.756.898 2.435c1.567 1.834 3.953 2.74 7.098 2.74c3.146 0 5.533-.905 7.102-2.739A3.75 3.75 0 0 0 20 16.821v-.575Zm-13.751-.749H17.75c.413 0 .748.335.748.75v.575a2.25 2.25 0 0 1-.54 1.463c-1.257 1.468-3.224 2.213-5.963 2.213c-2.738 0-4.704-.745-5.957-2.213a2.25 2.25 0 0 1-.539-1.461v-.578a.75.75 0 0 1 .749-.749Zm10.748-8.495a5 5 0 0 0-9.025-2.967A.75.75 0 0 0 7.748 4H5.25a.75.75 0 0 0-.75.75v5.498A2.75 2.75 0 0 0 7.25 13h.25v-.004h.01a.998.998 0 1 0-.786-1.611A1.25 1.25 0 0 1 6 10.249V10h.748c.38 0 .733-.122 1.02-.328a5 5 0 0 0 9.229-2.67Zm-10-.106a5.114 5.114 0 0 0 0 .212v1.141a.25.25 0 0 1-.25.25H6V5.501h.998v1.395Zm1.5.195v-.178a3.5 3.5 0 1 1 0 .178Z">
+                                                        </path>
+                                                    </svg></span></div>
+                                            <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Passionate
+                                                Friendly Support</h3>
+                                            <p class="mt-5 text-base text-gray-500">Our team is already ready to help
+                                                you launch and grow your website</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--]-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a to class="ui-button ui-button-base ui-button-primary astro-FSSWMXCN astro-FSSWMXCN"
+                    href="https://app.mixo.io">
+                    <!--[-->Get Started for Free
+                    <!--]-->
+                </a>
+            </div>
+
+            <div class="flex-col-center space-y-12 lg:space-y-24 astro-FSSWMXCN">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:px-8 astro-FSSWMXCN">
+                    <div class="text-center lg:text-left">
+                        <h2 class="text-lg font-semibold text-brand-primary">Unbeatable value<span
+                                class="text-primary">.</span></h2>
+                        <p class="mt-2 text-3xl font-bold tracking-tight">All-in-one platform 🎁</p>
+                        <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">Packed with incredible features to
+                            make sure you have everything you need to launch and grow.</p>
+                        <div class="divider mt-6 lg:hidden"></div>
+                    </div>
+                    <div class="mt-12 lg:col-span-2 lg:mt-0 text-left">
+                        <dl
+                            class="space-y-10 sm:grid sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-3 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8">
+                            <!--[-->
+                            <div class="relative">
+                                <dt><svg viewBox="0 0 20 20" width="1.2em" height="1.2em"
+                                        class="absolute h-6 w-6 text-emerald-400" aria-hidden="true">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="ml-9 text-lg font-medium leading-6">Access to Mixo&#39;s AI powered site
+                                        creator.</p>
+                                </dt>
+                                <!---->
+                            </div>
+                            <div class="relative">
+                                <dt><svg viewBox="0 0 20 20" width="1.2em" height="1.2em"
+                                        class="absolute h-6 w-6 text-emerald-400" aria-hidden="true">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="ml-9 text-lg font-medium leading-6">Access to all site designer features.
+                                    </p>
+                                </dt>
+                                <!---->
+                            </div>
+                            <div class="relative">
+                                <dt><svg viewBox="0 0 20 20" width="1.2em" height="1.2em"
+                                        class="absolute h-6 w-6 text-emerald-400" aria-hidden="true">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="ml-9 text-lg font-medium leading-6">Ability to upgrade or downgrade
+                                        between the existing plans.</p>
+                                </dt>
+                                <!---->
+                            </div>
+                            <div class="relative">
+                                <dt><svg viewBox="0 0 20 20" width="1.2em" height="1.2em"
+                                        class="absolute h-6 w-6 text-emerald-400" aria-hidden="true">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="ml-9 text-lg font-medium leading-6">30 day money-back policy.</p>
+                                </dt>
+                                <!---->
+                            </div>
+                            <div class="relative">
+                                <dt><svg viewBox="0 0 20 20" width="1.2em" height="1.2em"
+                                        class="absolute h-6 w-6 text-emerald-400" aria-hidden="true">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="ml-9 text-lg font-medium leading-6">Try it for a month and see if it&#39;s
+                                        right for you.</p>
+                                </dt>
+                                <!---->
+                            </div>
+                            <div class="relative">
+                                <dt><svg viewBox="0 0 20 20" width="1.2em" height="1.2em"
+                                        class="absolute h-6 w-6 text-emerald-400" aria-hidden="true">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="ml-9 text-lg font-medium leading-6">Access to our Discord Community.</p>
+                                </dt>
+                                <!---->
+                            </div>
+                            <!--]-->
+                        </dl>
+                    </div>
+                </div>
+                <a to class="ui-button ui-button-base ui-button-primary astro-FSSWMXCN astro-FSSWMXCN"
+                    href="https://app.mixo.io">
+                    <!--[-->Get Started for Free
+                    <!--]-->
+                </a>
+            </div>
+
+            <div class="flex-col-center space-y-12 lg:space-y-24 astro-FSSWMXCN">
+                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-84 astro-FSSWMXCN">
+                    <div class="max-w-3xl mx-auto">
+                        <h2 class="text-3xl font-extrabold text-center sm:text-4xl"> Questions<span
+                                class="text-primary">?</span></h2>
+                        <div class="divider mt-6"></div>
+                        <dl class="mt-6 space-y-6 divide-y divide-slate-200">
+                            <!--[-->
+                            <div class="pt-6 faqs">
+                                <dt class="text-lg"><span class="font-medium">Is there a money-back guarantee?</span>
+                                </dt>
+                                <dd class="pr-12 mt-2">
+                                    <div class="text-slate-500 text-base">There is a 30 day money-back policy on your
+                                        purchase. Try for a month and see if it's right for you.</div>
+                                </dd>
+                            </div>
+                            <div class="pt-6 faqs">
+                                <dt class="text-lg"><span class="font-medium">Can I change my plan later?</span></dt>
+                                <dd class="pr-12 mt-2">
+                                    <div class="text-slate-500 text-base">Absolutely! You can change your plan from
+                                        within your dashboard at any time, and instantly unlock access to features at
+                                        the new plan level.</div>
+                                </dd>
+                            </div>
+                            <div class="pt-6 faqs">
+                                <dt class="text-lg"><span class="font-medium">Can I cancel my plan before the end of my
+                                        billing period?</span></dt>
+                                <dd class="pr-12 mt-2">
+                                    <div class="text-slate-500 text-base">We’ll be sorry to see you go, but we won’t
+                                        take it personally. You can cancel your recurring subscription at any time from
+                                        within your account, without having to contact support. Go to your account
+                                        settings and click
+                                        “Payment Settings” then “Cancel Subscription.”</div>
+                                </dd>
+                            </div>
+                            <!--]-->
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="flex flex-col space-y-2 items-center astro-FSSWMXCN">
+                    <a to class="ui-button ui-button-lg ui-button-primary astro-FSSWMXCN astro-FSSWMXCN"
+                        href="https://app.mixo.io">
+                        <!--[-->Get Started for Free
+                        <!--]-->
+                    </a>
+                    <p class="astro-FSSWMXCN">or
+                        <astro-island uid="Z1SlYju" component-url="/_astro/SupportLink.6cd2c07e.js"
+                            component-export="default" renderer-url="/_astro/client.98e404ee.js"
+                            props="{&quot;class&quot;:[0,&quot;astro-FSSWMXCN&quot;]}" ssr="" client="load"
+                            opts="{&quot;name&quot;:&quot;SupportLink&quot;,&quot;value&quot;:true}"
+                            await-children=""><button to
+                                class="ui-button ui-button-base ui-button-link cursor-pointer astro-FSSWMXCN cursor-pointer astro-FSSWMXCN"
+                                data-testid="support-link" type="button"><!--[--><!--[-->contact
+                                support<!--]--><!--]--></button></astro-island>
+                        :)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t astro-SZ7XMLTE">
+        <div class="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8 astro-SZ7XMLTE">
+            <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12 astro-SZ7XMLTE" aria-label="Footer">
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="/pricing" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Pricing</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="/features" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Features</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="/affiliates" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Affiliates</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="https://app.mixo.io/ai-website-builder"
+                        class="text-sm leading-6 footer-link astro-SZ7XMLTE">AI Website Builder</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="https://status.mixo.io" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Status</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="https://help.mixo.io" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Help</a>
+                </div>
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="/privacy" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Privacy</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="/terms" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Terms</a>
+                </div>
+            </nav>
+            <div class="mt-10 flex justify-center space-x-10 astro-SZ7XMLTE">
+                <a href="https://twitter.com/MixoTeam" class="text-gray-400 hover:text-gray-500 astro-SZ7XMLTE"
+                    target="_blank">
+                    <span class="sr-only astro-SZ7XMLTE">Twitter</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 astro-SZ7XMLTE" fill="currentColor"
+                        aria-hidden="true" viewBox="0 0 16 16">
+                        <path fill="currentColor"
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334c0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518a3.301 3.301 0 0 0 1.447-1.817a6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429a3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218a3.203 3.203 0 0 1-.865.115a3.23 3.23 0 0 1-.614-.057a3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                            class="astro-SZ7XMLTE"></path>
+                    </svg>
+                </a>
+
+                <a href="https://www.youtube.com/@mixoapp" class="text-gray-400 hover:text-gray-500 astro-SZ7XMLTE"
+                    target="_blank">
+                    <span class="sr-only astro-SZ7XMLTE">YouTube</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 astro-SZ7XMLTE" fill="currentColor"
+                        aria-hidden="true" viewBox="0 0 16 16">
+                        <path fill="currentColor"
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104l.022.26l.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105l-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006l-.087-.004l-.171-.007l-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103l.003-.052l.008-.104l.022-.26l.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007l.172-.006l.086-.003l.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                            class="astro-SZ7XMLTE"></path>
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/company/mixo-io/"
+                    class="text-gray-400 hover:text-gray-500 astro-SZ7XMLTE" target="_blank">
+                    <span class="sr-only astro-SZ7XMLTE">LinkedIn</span>
+
+                    <svg class="h-5 w-5 astro-SZ7XMLTE" fill="currentColor" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill="currentColor"
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248c-.015-.709-.52-1.248-1.342-1.248c-.822 0-1.359.54-1.359 1.248c0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586c.173-.431.568-.878 1.232-.878c.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252c-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                            class="astro-SZ7XMLTE"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <p class="mt-10 text-center text-xs leading-5 text-gray-500 astro-SZ7XMLTE">
+                &copy; 2023 Mixo.io All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Crisp -->
+    <script type="text/javascript">
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "211a89ee-af11-4718-937e-be995ea69b2b";
+        (function () {
+            d = document;
+            s = d.createElement("script");
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+    </script>
+
+    <!-- Rewardful -->
+    <script>
+        (function (w, r) {
+            w._rwq = r;
+            w[r] =
+                w[r] ||
+                function () {
+                    (w[r].q = w[r].q || []).push(arguments);
+                };
+        })(window, "rewardful");
+    </script>
+    <script async src="https://r.wdfl.co/rw.js" data-rewardful="35dd66"></script>
+
+    <!-- GTM -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHGL8M7FHL"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            window.dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-JHGL8M7FHL");
+    </script>
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon="{&quot;token&quot;: &quot;331da11241b54612b9793dbc3ff2612a&quot;}"></script>
+
+
+    <!-- Cloudflare Pages Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "be3f4f3bd8504319a187742a2509680c"}'></script>
+    <!-- Cloudflare Pages Analytics -->
+</body>
+
+</html>

@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" class="astro-SCKKX6R4">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="Astro v2.0.2">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="/img/mixo-logo.svg" type="image/x-icon">
+
+    <title>Mixo | Launch your startup in seconds</title>
+
+
+
+    <link rel="canonical" href="https://www.mixo.io/">
+
+
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mixo.io/img/social-banner.png">
+    <meta property="og:url" content="https://mixo.io">
+
+
+
+
+
+
+
+    <meta property="og:image:url" content="https://mixo.io/img/social-banner.png">
+
+
+
+    <meta property="og:image:height">
+    <meta property="og:image:alt" content="">
+
+
+
+
+    <meta name="twitter:image" content="https://mixo.io/img/social-banner.png">
+
+
+    <meta name="twitter:creator" content="@mixoteam">
+
+    <link rel="stylesheet" href="/home.css" />
+    <link rel="stylesheet" href="/index.22eb11bc.css" />
+    <link rel="stylesheet" href="/index.65057e21.css" />
+    <link rel="stylesheet" href="/privacy.5bb281f5.css" />
+    <script nonce="b8ef35be-8b8b-4a85-a72a-c1fa23cf8f54">
+        (function (w, d) {
+            ! function (Y, Z, _, ba) {
+                Y[_] = Y[_] || {};
+                Y[_].executed = [];
+                Y.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                Y.zaraz.q = [];
+                Y.zaraz._f = function (bb) {
+                    return function () {
+                        var bc = Array.prototype.slice.call(arguments);
+                        Y.zaraz.q.push({
+                            m: bb,
+                            a: bc
+                        })
+                    }
+                };
+                for (const bd of ["track", "set", "debug"]) Y.zaraz[bd] = Y.zaraz._f(bd);
+                Y.zaraz.init = () => {
+                    var be = Z.getElementsByTagName(ba)[0],
+                        bf = Z.createElement(ba),
+                        bg = Z.getElementsByTagName("title")[0];
+                    bg && (Y[_].t = Z.getElementsByTagName("title")[0].text);
+                    Y[_].x = Math.random();
+                    Y[_].w = Y.screen.width;
+                    Y[_].h = Y.screen.height;
+                    Y[_].j = Y.innerHeight;
+                    Y[_].e = Y.innerWidth;
+                    Y[_].l = Y.location.href;
+                    Y[_].r = Z.referrer;
+                    Y[_].k = Y.screen.colorDepth;
+                    Y[_].n = Z.characterSet;
+                    Y[_].o = (new Date).getTimezoneOffset();
+                    if (Y.dataLayer)
+                        for (const bk of Object.entries(Object.entries(dataLayer).reduce(((bl, bm) => ({
+                            ...bl[1],
+                            ...bm[1]
+                        })), {}))) zaraz.set(bk[0], bk[1], {
+                            scope: "page"
+                        });
+                    Y[_].q = [];
+                    for (; Y.zaraz.q.length;) {
+                        const bn = Y.zaraz.q.shift();
+                        Y[_].q.push(bn)
+                    }
+                    bf.defer = !0;
+                    for (const bo of [localStorage, sessionStorage]) Object.keys(bo || {}).filter((bq => bq.startsWith("_zaraz_"))).forEach((bp => {
+                        try {
+                            Y[_]["z_" + bp.slice(7)] = JSON.parse(bo.getItem(bp))
+                        } catch {
+                            Y[_]["z_" + bp.slice(7)] = bo.getItem(bp)
+                        }
+                    }));
+                    bf.referrerPolicy = "origin";
+                    bf.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(Y[_])));
+                    be.parentNode.insertBefore(bf, be)
+                };
+                ["complete", "interactive"].includes(Z.readyState) ? zaraz.init() : Y.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        })(window, document);
+    </script>
+</head>
+
+<body class=" astro-SCKKX6R4">
+    <style>
+        astro-island,
+        astro-slot {
+            display: contents
+        }
+    </style>
+    <script>
+        (self.Astro = self.Astro || {}).only = t => {
+            (async () => await (await t())())()
+        }, window.dispatchEvent(new Event("astro:only"));
+        var l; {
+            const c = {
+                0: t => t,
+                1: t => JSON.parse(t, o),
+                2: t => new RegExp(t),
+                3: t => new Date(t),
+                4: t => new Map(JSON.parse(t, o)),
+                5: t => new Set(JSON.parse(t, o)),
+                6: t => BigInt(t),
+                7: t => new URL(t),
+                8: t => new Uint8Array(JSON.parse(t)),
+                9: t => new Uint16Array(JSON.parse(t)),
+                10: t => new Uint32Array(JSON.parse(t))
+            },
+                o = (t, s) => {
+                    if (t === "" || !Array.isArray(s)) return s;
+                    const [e, n] = s;
+                    return e in c ? c[e](n) : void 0
+                };
+            customElements.get("astro-island") || customElements.define("astro-island", (l = class extends HTMLElement {
+                constructor() {
+                    super(...arguments);
+                    this.hydrate = () => {
+                        if (!this.hydrator || this.parentElement && this.parentElement.closest("astro-island[ssr]")) return;
+                        const s = this.querySelectorAll("astro-slot"),
+                            e = {},
+                            n = this.querySelectorAll("template[data-astro-template]");
+                        for (const r of n) {
+                            const i = r.closest(this.tagName);
+                            !i || !i.isSameNode(this) || (e[r.getAttribute("data-astro-template") || "default"] = r.innerHTML, r.remove())
+                        }
+                        for (const r of s) {
+                            const i = r.closest(this.tagName);
+                            !i || !i.isSameNode(this) || (e[r.getAttribute("name") || "default"] = r.innerHTML)
+                        }
+                        const a = this.hasAttribute("props") ? JSON.parse(this.getAttribute("props"), o) : {};
+                        this.hydrator(this)(this.Component, a, e, {
+                            client: this.getAttribute("client")
+                        }), this.removeAttribute("ssr"), window.removeEventListener("astro:hydrate", this.hydrate), window.dispatchEvent(new CustomEvent("astro:hydrate"))
+                    }
+                }
+                connectedCallback() {
+                    !this.hasAttribute("await-children") || this.firstChild ? this.childrenConnectedCallback() : new MutationObserver((s, e) => {
+                        e.disconnect(), this.childrenConnectedCallback()
+                    }).observe(this, {
+                        childList: !0
+                    })
+                }
+                async childrenConnectedCallback() {
+                    window.addEventListener("astro:hydrate", this.hydrate);
+                    let s = this.getAttribute("before-hydration-url");
+                    s && await
+                        import(s), this.start()
+                }
+                start() {
+                    const s = JSON.parse(this.getAttribute("opts")),
+                        e = this.getAttribute("client");
+                    if (Astro[e] === void 0) {
+                        window.addEventListener(`astro:${e}`, () => this.start(), {
+                            once: !0
+                        });
+                        return
+                    }
+                    Astro[e](async () => {
+                        const n = this.getAttribute("renderer-url"),
+                            [a, {
+                                default: r
+                            }] = await Promise.all([
+                                import(this.getAttribute("component-url")), n ?
+                                    import(n) : () => () => { }
+                            ]),
+                            i = this.getAttribute("component-export") || "default";
+                        if (!i.includes(".")) this.Component = a[i];
+                        else {
+                            this.Component = a;
+                            for (const d of i.split(".")) this.Component = this.Component[d]
+                        }
+                        return this.hydrator = r, this.hydrate
+                    }, s, this)
+                }
+                attributeChangedCallback() {
+                    this.hydrator && this.hydrate()
+                }
+            }, l.observedAttributes = ["props"], l))
+        }
+    </script>
+    <!-- <astro-island uid="1gtgP9" component-url="/MainNav.81dc6801.js" component-export="default"
+        renderer-url="/client.98e404ee.js"
+        props="{&quot;ctaLabel&quot;:[0,&quot;Get Started for Free&quot;],&quot;ctaLink&quot;:[0,&quot;https://app.mixo.io&quot;],&quot;class&quot;:[0,&quot;astro-SCKKX6R4&quot;]}"
+        ssr="" client="only"
+        opts="{&quot;name&quot;:&quot;MainNav&quot;,&quot;value&quot;:&quot;vue&quot;}"></astro-island> -->
+
+    <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">  <img src="/img/Link.svg" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="features.html">features</a></li>
+
+            <li><a href="#">help</a></li>
+
+        </ul>
+        <div class="button-parent">
+            <div class="button">
+                <a class="sign-in" href="#">Log in</a>
+                <a class="get" href="#">Get started for Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
+            <div
+                class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
+                <div>
+                    <div class="mt-6 sm:max-w-xl">
+                        <h1 class="text-4xl font-black tracking-tight text-gray-900 sm:text-6xl md:text-7xl"> Launch a
+                            startup in seconds with <span class="text-gradient">AI.</span></h1>
+                        <h2 class="mt-6 text-lg text-gray-500 sm:text-xl"> Have an idea for a startup, product or
+                            service? Our AI-powered builder helps entrepreneurs quickly launch and validate their
+                            business ideas. </h2>
+                    </div>
+                    <a to class="ui-button ui-button-base ui-button-primary inline-block mt-4 inline-block mt-4"
+                        href="https://app.mixo.io">
+                        <!--[-->Get Started for Free
+                        <!--]-->
+                    </a>
+                    <div class="mt-4 flex flex-col space-y-3">
+                        <div class="items-center divide-x divide-gray-300 inline-flex text-xs font-medium">
+                            <div class="min-w-0 py-1 pr-3"><span class="text-primary">30 day</span><span
+                                    class="text-gray-900"> money-back guarantee</span></div>
+                            <div class="min-w-0 py-1 pl-3">Cancel anytime</div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <div class="inline-flex items-center"><img
+                                src="https://storage.googleapis.com/mixo-sites/images/file-0cccee02-6032-43f6-b871-d794a8621a74.png"
+                                class="inline-block mr-3 border-2 border-primary rounded-full sm:mr-2 h-14 w-14"
+                                alt="Avatar of Emma">
+                            <div>
+                                <p class="text-base font-black tracking-tight text-gray-800 sm:text-lg"> “Mixo is simply
+                                    mind-blowing.” </p>
+                                <p class="sm:pl-2.5 text-sm sm:text-base font-bold text-gray-500"> Alexandra Allen <span
+                                        class="text-xs font-normal text-gray-400 sm:text-sm">(CEO of nemo)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
+                <div class="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                    <div class="hidden sm:block">
+                        <div
+                            class="absolute inset-y-0 w-screen left-1/2 bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full hero-bg-block">
+                        </div><svg class="absolute -mr-3 top-8 right-1/2 lg:m-0 lg:left-0" width="404" height="392"
+                            fill="none" viewBox="0 0 404 392">
+                            <defs>
+                                <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20"
+                                    patternUnits="userSpaceOnUse">
+                                    <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor">
+                                    </rect>
+                                </pattern>
+                            </defs>
+                            <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
+                        </svg>
+                    </div>
+                    <div
+                        class="relative pl-4 -mr:20 sm:-mr-32 md:-mr-16 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:flex lg:items-center xl:pl-12">
+                        <img class="w-full rounded-l-3xl lg:w-auto 2xl:h-full 2xl:max-w-none" src="/img/hero.png"
+                            alt="Mixo Features">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#06B47B] py-6 px-2">
+            <div class="items-center justify-center w-full inline-flex gap-2"><a
+                    href="https://www.trustpilot.com/review/mixo.io" target="_blank"
+                    class="text-base lg:text-lg lg:pt-1 font-bold"><span class="text-gray-900">Rated </span><span
+                        class="text-white">4.7 stars</span><span class="text-gray-900"> on Trustpilot</span></a>
+                <a class="flex" href="https://www.trustpilot.com/review/mixo.io" target="_blank">
+                    <!--[--><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="w-5 lg:w-6 h-auto text-white">
+                        <path fill="currentColor"
+                            d="m17.227 16.67l2.19 6.742l-7.413-5.388l5.223-1.354zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397l-2.84 8.714l7.422-5.388l4.583-3.326L24 9.311z">
+                        </path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="w-5 lg:w-6 h-auto text-white">
+                        <path fill="currentColor"
+                            d="m17.227 16.67l2.19 6.742l-7.413-5.388l5.223-1.354zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397l-2.84 8.714l7.422-5.388l4.583-3.326L24 9.311z">
+                        </path>
+                    </svg><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="w-5 lg:w-6 h-auto text-white">
+                        <path fill="currentColor"
+                            d="m17.227 16.67l2.19 6.742l-7.413-5.388l5.223-1.354zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397l-2.84 8.714l7.422-5.388l4.583-3.326L24 9.311z">
+                        </path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="w-5 lg:w-6 h-auto text-white">
+                        <path fill="currentColor"
+                            d="m17.227 16.67l2.19 6.742l-7.413-5.388l5.223-1.354zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397l-2.84 8.714l7.422-5.388l4.583-3.326L24 9.311z">
+                        </path>
+                    </svg><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="w-5 lg:w-6 h-auto text-white">
+                        <path fill="currentColor"
+                            d="m17.227 16.67l2.19 6.742l-7.413-5.388l5.223-1.354zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397l-2.84 8.714l7.422-5.388l4.583-3.326L24 9.311z">
+                        </path>
+                    </svg>
+                    <!--]-->
+                </a>
+            </div>
+        </div>
+
+        <div class="relative pt-16 pb-32 overflow-hidden bg-white">
+            <div class="relative">
+                <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+                    <div class="max-w-xl px-4 mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+                        <div>
+                            <div class="mt-6">
+                                <h2 class="text-4xl font-extrabold tracking-tight text-gray-900"> AI-powered
+                                    launcher<span class="text-gradient">.</span></h2>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-500 sm:text-xl"> With just a brief
+                                    description of your idea, Mixo will <strong>generate your entire website
+                                        content</strong> in seconds. Start collecting subscribers with <strong>stunning
+                                        landing pages</strong> that require <strong>no code or design</strong>.
+                                    Get started with a built-in email waiting list plus everything you need to launch,
+                                    grow and test your ideas. </p>
+                                <div class="mt-6">
+                                    <a to class="ui-button ui-button-base ui-button-primary" href="https://app.mixo.io">
+                                        <!--[-->Get Started for Free
+                                        <!--]-->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-6 mt-8 border-t border-gray-200">
+                            <blockquote>
+                                <div>
+                                    <p class="text-base text-gray-500"> “I tried it and the results are incredible. I
+                                        can&#39;t believe how good the site is from only one sentence!” </p>
+                                </div>
+                                <footer class="mt-3">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="flex-shrink-0"><img
+                                                src="https://storage.googleapis.com/mixo-sites/images/file-46535820-525a-44b8-85f4-3d2aa432a479.png"
+                                                class="w-10 h-10 border-2 border-primary rounded-full" alt="User photo">
+                                        </div>
+                                        <p class="text-sm font-bold text-gray-500 sm:text-base">Daniel Evans</p>
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
+                        <div class="pr-4 -mr-48 sm:pr-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"><img
+                                class="w-full lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                                src="/img/feature-1.png" alt="Mixo Example Page"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-24">
+                <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+                    <div class="max-w-xl px-4 mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+                        <div>
+                            <div class="mt-6">
+                                <h2 class="text-4xl font-extrabold tracking-tight text-gray-900"> Collect customer
+                                    feedback<span class="text-gradient">.</span></h2>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-500 sm:text-xl"> Mixo takes the pain
+                                    out of validating your product ideas. <strong>Connect with your customers</strong>
+                                    via email, surveys or interviews. It&#39;s <strong>great for pre-launching
+                                        products</strong>, gathering insights, building
+                                    waiting lists, running beta testing programs or just validating new product ideas.
+                                </p>
+                            </div>
+                            <div class="mt-6">
+                                <a to class="ui-button ui-button-base ui-button-primary" href="https://app.mixo.io">
+                                    <!--[-->Get Started for Free
+                                    <!--]-->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pt-6 mt-8 border-t border-gray-200">
+                            <blockquote>
+                                <div>
+                                    <p class="text-base text-gray-500"> “The product and customer support is fantastic.
+                                        It&#39;s refreshing to use a website that actually cares about its customers.”
+                                    </p>
+                                </div>
+                                <footer class="mt-3">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="flex-shrink-0"><img
+                                                src="https://storage.googleapis.com/mixo-sites/images/file-f1f1bd44-cbba-4764-bb10-ae9aad251be5.png"
+                                                class="w-10 h-10 border-2 border-primary rounded-full" alt="User photo">
+                                        </div>
+                                        <p class="text-sm font-bold text-gray-500 sm:text-base">Jacqui Dixon</p>
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="mt-12 sm:mt-16 lg:mt-0">
+                        <div class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"><img
+                                class="w-full lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                                src="/img/feature-2.png" alt="Mixo Feedback"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-24">
+                <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+                    <div class="max-w-xl px-4 mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+                        <div>
+                            <div class="mt-6">
+                                <h2 class="text-4xl font-extrabold tracking-tight text-gray-900"> Grow your
+                                    audience<span class="text-gradient">.</span></h2>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-500 sm:text-xl"> With
+                                    <strong>integrated subscriber management tools</strong>, you can create lasting
+                                    connections with your audience. You can then <strong>export subscribers into
+                                        marketing platforms</strong> or track deeper stats with Google
+                                    Analytics.
+                                </p>
+                                <div class="mt-6">
+                                    <a to class="ui-button ui-button-base ui-button-primary" href="https://app.mixo.io">
+                                        <!--[-->Get Started for Free
+                                        <!--]-->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-6 mt-8 border-t border-gray-200">
+                            <blockquote>
+                                <div>
+                                    <p class="text-base text-gray-500"> “It was so exciting to see so many customers
+                                        sign up to my product. I always felt like my idea had potential, but having them
+                                        sign up made it real.” </p>
+                                </div>
+                                <footer class="mt-3">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="flex-shrink-0"><img
+                                                src="https://storage.googleapis.com/mixo-sites/images/file-f93faf0f-ca50-49ca-a00d-5e571ccaee55.png"
+                                                class="w-10 h-10 border-2 border-primary rounded-full" alt="User photo">
+                                        </div>
+                                        <p class="text-sm font-bold text-gray-500 sm:text-base">
+                                            Rebecca Herdis </p>
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
+                        <div class="pr-4 -mr-48 sm:pr-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"><img
+                                class="w-full lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                                src="/img/feature-3.png" alt="Mixo Analytics"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="py-12 overflow-hidden bg-primary md:py-20">
+            <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8"><svg
+                    class="absolute transform top-full right-full translate-x-1/3 -translate-y-1/4 lg:translate-x-1/2 xl:-translate-y-1/2 rotate-3"
+                    width="404" height="404" fill="none" viewBox="0 0 404 404" role="img" aria-labelledby="svg-squares">
+                    <title id="svg-squares">squares</title>
+                    <defs>
+                        <pattern id="ad119f34-7694-4c31-947f-5c9d249b21f3" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-rose-400" fill="currentColor"></rect>
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="404" fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)"></rect>
+                </svg>
+                <div class="relative">
+                    <blockquote>
+                        <div
+                            class="max-w-3xl mx-auto text-xl font-bold leading-7 text-center text-white md:leading-10 md:text-3xl">
+                            <p> “I love the simplicity of the product. What a great use case for AI. Mixo will
+                                definitely help a lot of entrepreneurs get the pains of landing pages out of the way to
+                                focus on other priorities.” </p>
+                        </div>
+                        <footer class="mt-8">
+                            <div class="md:flex md:items-center md:justify-center">
+                                <div class="md:flex-shrink-0"><img
+                                        src="https://storage.googleapis.com/mixo-files/public/img/73x73.png"
+                                        class="w-10 h-10 mx-auto border-2 rounded-full" alt="Jimil Patel"></div>
+                                <div class="mt-3 text-center md:mt-0 md:ml-3 md:flex md:items-center">
+                                    <div class="text-lg font-medium text-white">Jimil Patel</div>
+                                    <div class="ml-1 text-sm font-medium text-rose-200"> (Mixo customer via TrustPilot)
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
+                    <div class="mx-auto w-full max-w-xl lg:mx-0">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900"> Trusted by over <span
+                                class="text-gradient">150,000</span> of the most innovative creators in the world<span
+                                class="text-primary">.</span></h2>
+                        <p class="mt-6 text-lg leading-8 text-gray-600"> Mixo is the trusted, easy-to-use platform
+                            chosen by everyone from solo entrepreneurs to employees at Fortune 500 companies for its
+                            reliability, quality, and cutting-edge features. </p>
+                        <div class="mt-8 flex items-center gap-x-6">
+                            <a to class="ui-button ui-button-base ui-button-primary" href="https://app.mixo.io">
+                                <!--[-->Get Started for Free
+                                <!--]-->
+                            </a><button to
+                                class="ui-button ui-button-base ui-button-link cursor-pointer !text-sm !font-semibold !text-slate-800 hover:!no-underline hover:!text-secondary cursor-pointer !text-sm !font-semibold !text-slate-800 hover:!no-underline hover:!text-secondary"
+                                data-testid="support-link" type="button"><!--[--><!--[--><span>Contact Us</span> <span
+                                    aria-hidden="true">→</span><!--]--><!--]--></button>
+                        </div>
+                    </div>
+                    <div
+                        class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-8 gap-x-12 md:gap-y-12 lg:mx-0 lg:max-w-none lg:pl-8">
+                        <!--[--><svg viewBox="0 0 512 130" width="1.2em" height="1.2em"
+                            class="max-h-6 sm:max-h-8 md:max-h-10 h-auto w-full object-contain object-left"
+                            title="Intercom">
+                            <path
+                                d="M110.27 0a15.175 15.175 0 0 1 5.996 1.209a15.626 15.626 0 0 1 5.094 3.495a16.28 16.28 0 0 1 3.416 5.251a16.755 16.755 0 0 1 1.218 6.207v97.006a16.754 16.754 0 0 1-1.231 6.204a16.278 16.278 0 0 1-3.428 5.243a15.619 15.619 0 0 1-5.1 3.484a15.178 15.178 0 0 1-6 1.195H15.759c-2.059.013-4.1-.393-6.007-1.198a15.619 15.619 0 0 1-5.105-3.493a16.276 16.276 0 0 1-3.425-5.256A16.753 16.753 0 0 1 0 113.132v-96.97c.01-2.135.424-4.247 1.221-6.215a16.276 16.276 0 0 1 3.425-5.255a15.619 15.619 0 0 1 5.105-3.494A15.169 15.169 0 0 1 15.758 0ZM20.82 90.583l-.236.012a4.14 4.14 0 0 0-2.851 1.49a4.32 4.32 0 0 0-.783 1.462a4.425 4.425 0 0 0 .263 3.266c.249.5.59.944 1.005 1.307c.658.574 16.139 13.97 44.71 13.97c28.573 0 44.157-13.468 44.711-14.042l.035.036a4.332 4.332 0 0 0 1.397-2.91a4.376 4.376 0 0 0-.981-3.088a4.206 4.206 0 0 0-2.87-1.48a4.16 4.16 0 0 0-3.053 1.013c-.138.108-14.164 11.888-39.273 11.888S23.862 91.799 23.619 91.619a4.093 4.093 0 0 0-3.036-1.024Zm412.223-49.857c13.284 0 19.03 9.149 19.03 23.839c0 14.883-5.81 23.839-19.03 23.839c-13.467 0-19.093-8.956-19.093-23.84c0-14.43 5.684-23.838 19.093-23.838ZM63.066 17.204a4.116 4.116 0 0 0-2.963 1.273a4.428 4.428 0 0 0-1.227 3.073v62.49c0 1.154.441 2.259 1.227 3.074a4.116 4.116 0 0 0 2.963 1.273a4.115 4.115 0 0 0 2.963-1.273a4.428 4.428 0 0 0 1.228-3.073V21.55a4.428 4.428 0 0 0-1.228-3.073a4.115 4.115 0 0 0-2.963-1.273Zm325.368 23.522c4.88 0 8.65 1.161 11.491 3.673c2.473 2.06 4.264 4.962 5.314 9.022c.555 2.126-.866 4.252-3.212 4.704c-2.224.386-4.013-1.096-4.694-3.222c-.742-2.06-1.733-3.543-2.905-4.577c-1.607-1.482-3.582-2.126-6.18-2.126c-2.78 0-5.191.837-6.982 2.705c-2.595 2.705-3.708 7.54-3.708 13.66c0 6.058 1.051 10.889 3.77 13.594c1.791 1.867 4.14 2.705 6.858 2.705c2.84 0 5.002-.772 6.797-2.512c.924-.903 1.73-2.06 2.286-3.415c.803-1.999 2.472-3.48 4.632-2.964c2.162.518 3.524 2.705 2.843 4.832c-1.114 3.542-3.027 6.378-5.622 8.311c-2.84 2.126-6.363 3.222-10.81 3.222c-5.684 0-9.27-1.74-11.99-4.186c-4.632-4.318-6.734-11.083-6.734-19.587c0-8.57 2.04-15.27 6.613-19.522c2.841-2.577 6.67-4.317 12.233-4.317Zm-57.204.704l.243.006h14.64c10.074 0 14.273 6.83 14.273 13.787c0 6.522-3.581 11.364-9.746 12.752l-.327.07l7.723 14.3c1.052 1.868.37 4.253-1.79 5.414c-2.037 1.062-4.247.31-5.335-1.436l-.101-.173l-8.589-16.557h-8.154l.062 14.046c0 2.191-1.605 3.993-3.892 3.993c-2.155 0-3.728-1.695-3.825-3.79l-.004-.203V46.525c0-3.182 1.616-5.026 4.585-5.094l.237-.001Zm-130.86.002c3.892 0 5.497 2.191 7.043 5.413l7.66 15.66l6.549 15.207l-.185-14.563l-.062-17.588c0-2.192 1.605-3.994 3.893-3.994c2.219-.004 3.825 1.798 3.825 3.99V80.35c0 4.704-2.408 7.347-6.239 7.347h-.306c-3.645 0-5.377-2.192-6.92-5.414l-7.785-15.786l-6.92-16.3l.186 15.787l.062 17.588c0 2.192-1.605 3.994-3.892 3.994c-2.224 0-3.83-1.806-3.83-3.994V48.779c0-4.318 2.41-7.347 6.612-7.347h.309Zm-25.026.13c2.223 0 3.83 1.807 3.83 3.995v38.077c0 2.192-1.607 3.994-3.892 3.994c-2.224 0-3.831-1.806-3.831-3.994V45.557c0-2.192 1.607-3.994 3.893-3.994Zm329.859.005c4.325 0 6.733 2.705 6.733 7.54L512 83.573c0 2.192-1.607 3.994-3.893 3.994c-2.223 0-3.83-1.806-3.83-3.994V66.305l.186-16.816l-5.377 17.075l-5.435 16.816c-.924 2.963-2.841 4.125-5.251 4.125c-2.534 0-4.388-1.223-5.375-4.187l-5.562-16.75l-5.128-16.817l.184 16.558v17.268c0 2.192-1.607 3.994-3.892 3.994c-2.224 0-3.83-1.806-3.83-3.994v-34.47c0-4.77 2.471-7.54 6.796-7.54c4.08 0 6.365 2.253 7.66 6.378l5.683 17.588l3.46 11.986l3.522-11.986l5.684-17.588c1.3-4.125 3.524-6.378 7.6-6.378Zm-235.579 0c1.976 0 3.582 1.547 3.582 3.8c0 2.193-1.606 3.736-3.582 3.736h-9.576v34.47c0 2.192-1.605 3.994-3.893 3.994c-2.222 0-3.829-1.806-3.829-3.994v-34.47h-9.576c-1.976 0-3.58-1.547-3.58-3.801c0-2.192 1.604-3.735 3.58-3.735h26.874Zm18.72-.131h22.242c1.975 0 3.58 1.609 3.58 3.8c0 2.192-1.605 3.736-3.58 3.736h-19.65v11.082h17.362c1.917 0 3.46 1.482 3.46 3.608c0 2.126-1.543 3.608-3.46 3.608h-17.361v12.756h19.649c1.975 0 3.58 1.61 3.58 3.801c0 2.192-1.605 3.736-3.58 3.736h-22.428c-3.212.004-5.001-1.864-4.88-5.28V46.526c0-3.35 1.79-5.217 5.066-5.09ZM42.183 19.574a4.135 4.135 0 0 0-3.039 1.117a4.448 4.448 0 0 0-1.394 3.013v57.464a4.43 4.43 0 0 0 1.227 3.073a4.117 4.117 0 0 0 2.963 1.273a4.117 4.117 0 0 0 2.963-1.273a4.43 4.43 0 0 0 1.228-3.073V23.704a4.422 4.422 0 0 0-1.21-2.85a4.125 4.125 0 0 0-2.738-1.28Zm41.663-.215a4.116 4.116 0 0 0-2.963 1.273a4.428 4.428 0 0 0-1.228 3.072v57.464a4.43 4.43 0 0 0 1.228 3.073a4.117 4.117 0 0 0 2.963 1.273a4.116 4.116 0 0 0 2.963-1.273a4.429 4.429 0 0 0 1.227-3.073V23.704a4.428 4.428 0 0 0-1.227-3.072a4.115 4.115 0 0 0-2.963-1.273ZM432.98 48.266c-7.23 0-11.061 5.348-11.061 16.299c0 10.955 3.708 16.299 11.06 16.299c7.29 0 11.182-5.348 11.182-16.3c0-10.954-3.829-16.298-11.181-16.298ZM104.902 27.978a4.116 4.116 0 0 0-2.963 1.273a4.428 4.428 0 0 0-1.227 3.073v38.824a4.43 4.43 0 0 0 1.227 3.073a4.117 4.117 0 0 0 2.963 1.272a4.117 4.117 0 0 0 2.964-1.272a4.43 4.43 0 0 0 1.227-3.073V32.324a4.429 4.429 0 0 0-1.227-3.073a4.116 4.116 0 0 0-2.964-1.273Zm-83.741.216a4.135 4.135 0 0 0-3.039 1.116a4.447 4.447 0 0 0-1.394 3.014v38.752a4.43 4.43 0 0 0 1.227 3.073a4.116 4.116 0 0 0 2.963 1.272a4.115 4.115 0 0 0 2.963-1.272a4.428 4.428 0 0 0 1.228-3.073V32.324a4.422 4.422 0 0 0-1.21-2.851a4.125 4.125 0 0 0-2.738-1.28Zm325.072 20.774h-12.171v13.34h12.233c4.14 0 6.302-2.771 6.302-6.703c0-3.933-2.287-6.637-6.364-6.637Z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 512 92" width="1.2em" height="1.2em"
+                            class="max-h-6 sm:max-h-8 md:max-h-10 h-auto w-full object-contain object-left"
+                            title="Eventbrite">
+                            <path fill="#F05537"
+                                d="M24.21 31.24c16.814-3.842 33.629 6.486 37.47 22.959c.379 1.745.623 3.557.733 5.377l.035.683l-9.56 2.134l-4.95 1.11l-30.642 6.913c3.841 5.462 10.84 8.28 17.754 6.743c4.055-.91 7.63-3.266 10.021-6.599l.22-.315l14.51 3.414c-3.925 8.45-11.607 15.108-21.508 17.327c-16.814 3.84-33.544-6.402-37.47-22.96C-3.103 51.468 7.395 35.08 24.21 31.239Zm449.552.084c16.814-3.84 33.629 6.487 37.47 22.96c.38 1.745.624 3.558.733 5.378l.035.682l-9.56 2.134l-4.95 1.11l-30.642 6.913c3.841 5.463 10.84 8.28 17.754 6.743c4.055-.91 7.63-3.265 10.021-6.598l.221-.315l14.51 3.328c-3.926 8.45-11.608 15.108-21.509 17.327c-16.814 3.84-33.629-6.487-37.47-22.96c-3.926-16.473 6.573-32.86 23.387-36.702Zm-332.107 0c16.814-3.84 33.544 6.487 37.47 22.96c.38 1.745.624 3.558.733 5.378l.035.682l-9.56 2.134l-4.95 1.11l-30.642 6.913a17.106 17.106 0 0 0 17.754 6.743c4.182-.939 7.852-3.414 10.242-6.913l10.258 2.315c2.39.547 4.252.983 4.252 1.013c-3.926 8.45-11.608 15.108-21.509 17.327c-16.814 3.84-33.629-6.487-37.47-22.96c-3.926-16.473 6.573-32.86 23.387-36.702ZM300.923 0v35.848c4.78-3.84 10.413-5.462 16.644-5.462c17.582 0 31.666 13.57 31.666 30.556c0 16.9-14.084 30.727-31.666 30.727c-6.146 0-11.864-1.622-16.644-5.463v3.841h-15.449V3.499L300.923 0Zm68.538 31.41v5.206c4.68-3.343 9.197-4.558 16.835-5.008l.492-.028v15.023c-14.957.507-17.281 5.53-17.326 14.41v29.034h-15.45V31.41h15.45ZM268.574 7.34v24.07h12.035v14.595h-12.035v44.042h-16.046V46.005h-9.474V31.41h9.474V10.925l16.046-3.585Zm-53.26 22.96c13.06 0 24.411 7.511 24.411 25.862v33.8h-15.534v-31.24c0-11.112-5.89-13.718-11.903-13.823l-.388-.004l-.388.004c-6.013.097-11.903 2.538-11.903 13.568v31.58h-15.448V31.41h15.448v4.353l1.147-.824c3.21-2.268 7.258-4.639 14.558-4.639ZM74.568 31.41L89.76 71.184l15.363-39.774h16.815l-24.07 58.637H81.823L57.753 31.41h16.815Zm333.046 0v58.637h-15.45V31.41h15.45Zm31.153-20.485V31.41h12.035v14.85h-12.035v43.7h-16.046V46.347h-9.474V31.41h9.474V10.925h16.046ZM317.481 44.47c-9.132 0-16.558 7.255-16.9 15.705v1.45c.427 8.536 7.853 15.705 16.9 15.705c9.218 0 16.815-7.51 16.815-16.473c0-8.79-7.597-16.387-16.815-16.387Zm146.636 13.998l30.556-6.914c-4.011-5.548-11.01-8.194-17.668-6.658c-6.802 1.512-11.62 6.907-12.831 13.258l-.057.314l30.556-6.914l-30.556 6.914Zm-332.107 0l30.556-6.914c-3.84-5.377-10.754-8.194-17.668-6.658c-6.803 1.512-11.706 6.91-12.836 13.263l-.052.309l30.556-6.914l-30.556 6.914Zm-117.445 0l30.556-6.914c-3.84-5.377-10.754-8.194-17.668-6.658c-6.804 1.512-11.706 6.827-12.836 13.26l-.052.312l30.556-6.914l-30.556 6.914ZM399.932 1.366c5.548 0 9.645 4.097 9.645 9.474c0 5.462-4.182 9.645-9.645 9.645c-5.548 0-9.816-4.183-9.816-9.645c0-5.463 4.268-9.474 9.816-9.474Z">
+                            </path>
+                        </svg><svg viewBox="0 0 512 102" width="1.2em" height="1.2em"
+                            class="max-h-6 sm:max-h-8 md:max-h-10 h-auto w-full object-contain object-left"
+                            title="Asana">
+                            <path fill="#0D0E10"
+                                d="m499.094 77.034l.001.008c.31 3.53 3.133 8.022 8.024 8.022h2.862c1.11 0 2.019-.91 2.019-2.02V20.107h-.013a2.018 2.018 0 0 0-2.006-1.91h-8.868a2.02 2.02 0 0 0-2.007 1.91h-.011v5.114c-5.433-6.697-14-9.477-22.589-9.477c-19.526 0-35.354 15.84-35.354 35.382c0 19.542 15.828 35.383 35.354 35.383v.002c8.59 0 17.95-3.335 22.588-9.476Zm-22.554-2.91c-12.418 0-22.486-10.296-22.486-23c0-12.7 10.068-22.998 22.486-22.998c12.418 0 22.484 10.298 22.484 22.999c0 12.576-9.866 22.794-22.112 22.997l-.372.003Zm-46.599 5.083l-.004-32.568h.001c0-18.359-11.573-30.744-30.028-30.744c-8.81 0-16.03 5.098-18.581 9.477l-.043-.25l-.047-.252a13.3 13.3 0 0 0-.026-.125l-.055-.251l-.06-.25l-.065-.25l-.072-.248a10.39 10.39 0 0 0-.16-.492l-.09-.243c-.98-2.538-3.055-4.662-7.384-4.662h-2.87c-1.111 0-2.019.91-2.019 2.02v62.944h.012a2.02 2.02 0 0 0 2.007 1.91h8.868c.136 0 .269-.017.397-.042l.058-.015l.113-.036l.133-.038a.813.813 0 0 0 .064-.023l.077-.036l.255-.143a1.64 1.64 0 0 0 .169-.126l.08-.07c.012-.013.028-.021.04-.033a2.002 2.002 0 0 0 .62-1.348h.011v-37.18c0-9.86 7.988-17.853 17.841-17.853c9.853 0 17.84 7.994 17.84 17.854l.009 31.077l.002-.011l.004.085v6.028h.012a2.02 2.02 0 0 0 2.007 1.91h8.868c.136 0 .269-.017.397-.042c.053-.01.101-.03.152-.045l.146-.042l.071-.025c.073-.03.139-.072.207-.11c.042-.024.086-.042.127-.069c.081-.053.156-.118.23-.183l.058-.048c.055-.054.107-.11.156-.17l.086-.11a2 2 0 0 0 .364-.93l.013-.136h.011v-4.105l-.002-.001Zm-92.354-2.173v.008c.311 3.53 3.134 8.022 8.025 8.022h2.862c1.11 0 2.017-.91 2.017-2.02V20.107h-.011a2.018 2.018 0 0 0-2.006-1.91h-8.868a2.02 2.02 0 0 0-2.008 1.91h-.01v5.114c-5.434-6.697-14-9.477-22.59-9.477c-19.525 0-35.353 15.84-35.353 35.382c0 19.542 15.828 35.383 35.353 35.383v.002c8.59 0 17.952-3.335 22.589-9.476Zm-22.555-2.91c-12.417 0-22.484-10.296-22.484-23c0-12.7 10.067-22.998 22.484-22.998c12.419 0 22.484 10.298 22.484 22.999c0 12.576-9.865 22.794-22.112 22.997l-.372.003Zm-87.829-6.096c5.92 4.104 12.382 6.097 18.591 6.097c1.22 0 2.448-.13 3.63-.384l.353-.08c.175-.042.35-.086.523-.134l.344-.098c.115-.034.228-.069.341-.105l.336-.113c.78-.271 1.52-.601 2.205-.988l.29-.169c2.385-1.436 4.01-3.586 4.01-6.34c0-3.709-3.604-5.789-8.24-7.332l-.54-.175c-.09-.03-.181-.058-.273-.087l-.551-.169l-.559-.165l-.564-.162l-.857-.238l-.865-.231l-1.162-.302l-2.905-.74l-1.143-.298l-.844-.227l-.555-.154l-.546-.156l-.27-.079l-.535-.16a49.773 49.773 0 0 1-.263-.08l-.52-.166c-.17-.056-.34-.112-.508-.169c-8.374-2.847-15.587-8.735-15.587-18.268c0-14.589 12.989-20.614 25.111-20.614c7.681 0 15.607 2.535 20.745 6.166c.971.737 1.084 1.533.989 2.102l-.023.118l-.029.11l-.032.103l-.034.094l-.035.084l-.05.107l-.044.082l-.05.082l-4.905 7.01c-.03.044-.063.088-.096.13l-.103.128c-.554.644-1.414 1.09-2.586.427l-.17-.102l-.855-.54l-.307-.187l-.337-.2l-.241-.14l-.255-.143a26.13 26.13 0 0 0-.133-.074l-.275-.149l-.288-.15l-.3-.154l-.315-.154l-.327-.155l-.34-.155a24.37 24.37 0 0 0-.352-.154l-.365-.153l-.377-.15a23.366 23.366 0 0 0-8.51-1.6c-7.396 0-11.851 3.42-11.851 7.656c0 2.407 1.299 4.032 3.388 5.26l.283.162c.431.239.893.462 1.382.674l.33.139l.168.068l.34.134l.174.066l.352.13l.358.127l.365.124l.185.061l.375.12l.572.178l.585.173l.596.17l.403.112l.408.111l.828.22l1.48.382l1.423.386l1.07.296l.715.202l.357.102l.713.207l.356.105l.711.214l.708.22c9.779 3.068 18.661 7.754 18.661 19.79c0 12.854-12.014 20.797-25.29 20.797c-10.063 0-18.629-2.87-25.814-8.147c-.904-.906-.88-1.772-.72-2.316l.035-.108l.037-.098l.038-.088l.038-.077l.05-.094l.071-.11l4.88-6.975c.837-1.098 1.857-.949 2.485-.648l.113.058l.103.06l.092.06Zm-34.091 9.006v.008c.31 3.53 3.134 8.022 8.025 8.022H204c1.11 0 2.019-.91 2.019-2.02V20.107h-.013a2.018 2.018 0 0 0-2.006-1.91h-8.868a2.02 2.02 0 0 0-2.008 1.91h-.01v5.114c-5.433-6.697-14-9.477-22.59-9.477c-19.524 0-35.353 15.84-35.353 35.382c0 19.542 15.829 35.383 35.354 35.383v.002c8.59 0 17.95-3.335 22.588-9.476Zm-22.554-2.91c-12.418 0-22.485-10.296-22.485-23c0-12.7 10.067-22.998 22.485-22.998s22.484 10.298 22.484 22.999c0 12.576-9.866 22.794-22.112 22.997l-.372.003Z">
+                            </path>
+                            <path fill="#F06A6A"
+                                d="M85.605 53.532c-13.14 0-23.792 10.652-23.792 23.792c0 13.14 10.652 23.792 23.792 23.792c13.14 0 23.791-10.652 23.791-23.792c0-13.14-10.651-23.792-23.791-23.792Zm-61.813.002C10.652 53.534 0 64.184 0 77.324c0 13.14 10.652 23.792 23.792 23.792c13.14 0 23.793-10.652 23.793-23.792c0-13.14-10.653-23.79-23.793-23.79ZM78.49 23.79c0 13.141-10.652 23.794-23.792 23.794c-13.14 0-23.791-10.653-23.791-23.794C30.907 10.653 41.558 0 54.698 0S78.49 10.653 78.49 23.791Z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 512 126" width="1.2em" height="1.2em"
+                            class="max-h-6 sm:max-h-8 md:max-h-10 h-auto w-full object-contain object-left"
+                            title="Dribbble">
+                            <path
+                                d="M156.434 50.322c5.86 0 10.61-4.752 10.61-10.613c0-5.862-4.75-10.613-10.61-10.613c-5.86 0-10.61 4.751-10.61 10.613c0 5.861 4.75 10.613 10.61 10.613Zm350.16 36.261c-1.614-1.135-2.86-1.323-3.894.881c-17.82 38.596-47.85 19.336-44.867 21.031c6.661-3.047 24.18-17.097 21.532-36.497c-1.608-11.856-11.784-17.115-22.585-15.232c-18.854 3.287-25.79 23.623-22.259 41.627c.618 3.092 1.722 5.642 2.825 8.14c-21.306 17.326-29.767-15.51-30.727-19.434c-.038-.21 16.451-13.954 21.037-46.705c4.807-34.325-6.143-40.575-17.34-40.38c-20.72.361-26.319 43.652-18.797 79.732c-.63.164-3.562 1.788-8.273 1.97c-3.39-10.667-17.875-20.017-21.666-16.414c-9.488 9.013 2.301 26.634 10.596 28.016c-4.983 30.691-36.146 23.09-30.345-15.361c10.148-18.845 17.866-46.866 16.489-63.782C357.832 8.186 353.404.162 343.39.56c-19.261.762-21.355 44.065-19.097 74.799c-.112-.757-1.184 3.734-9.077 5.967c-1.867-10.363-18.553-20.765-22.481-15.764c-7.353 9.36 5.39 26.049 11.426 27.213c-4.983 30.69-36.145 23.089-30.344-15.362c10.148-18.844 17.865-46.865 16.488-63.781c-.488-5.99-4.915-14.014-14.93-13.617c-19.261.763-21.355 44.066-19.097 74.8c-.113-.769-1.21 3.87-9.425 6.066c-.275-13.445-17.022-19.61-21.045-15.32c-7.17 7.647 1.642 23.337 9.794 27.214c-4.983 30.69-36.145 23.089-30.344-15.362c10.148-18.844 17.866-46.865 16.488-63.781c-.487-5.99-4.915-14.014-14.93-13.617c-19.26.763-20.81 46.243-18.552 76.976c-6.344 27.181-27.619 61.125-24.855-6.872c.273-4.77.571-6.581-1.807-8.367c-1.782-1.388-5.834-.72-8.049-.665c-2.692.108-3.367 1.683-3.962 4.064c-1.386 6.148-1.635 12.108-1.833 20.24c-.13 3.804-.435 5.579-1.9 10.766c-1.463 5.186-9.81 14.665-14.38 13.08c-6.34-2.18-4.26-20.078-3.072-32.375c.99-9.718-2.18-14.082-10.302-15.669c-4.755-.991-7.644-.839-12.596-2.4c-4.683-1.476-5.742-10.334-15.73-7.382c-5.463 1.616-1.951 13.191-3.264 21.77c-6.455 42.201-19.886 43.36-26.117 22.86C88.46 27.31 68.515.214 56.84.214c-12.16 0-26.06 8.376-20.174 61.968c-2.862-.835-3.742-1.285-6.875-1.285C12.072 60.897 0 75.221 0 92.891s12.073 31.995 29.792 31.995c10.46 0 17.804-4.757 23.366-12.116c3.629 5.197 8.048 12.196 16.129 11.881c24.087-.938 31.092-50.347 31.919-53.103c2.575.397 5.011 1.148 7.389 1.545c3.962.595 4.25 2.163 4.16 6.148c-1.05 33.604 5.151 45.37 19.217 45.37c7.837 0 14.822-7.7 19.634-13.206c3.594 7.418 9.321 12.979 17.004 13.205c18.617.463 25.745-29.21 25.095-25.305c-.51 3.064 6.04 25.138 25.206 25.218c23.741.1 28.154-26.008 28.68-30.381c.066-.87.095-.78 0 0l-.018.265c7.537-1.402 11.426-5.443 11.426-5.443s6.052 35.965 28.47 35.56c23.28-.422 27.67-24.022 28.246-28.624c.076-1.092.121-.964 0 0a20.34 20.34 0 0 0-.009.135c8.953-3.257 11.308-6.526 11.308-6.526s4.81 35.25 28.47 35.558c21.084.276 28.898-21.315 28.944-30.352c3.556.038 10.134-2.11 9.98-2.232c0 0 7.723 30.82 29.29 32.403c10.126.743 17.722-5.698 22.052-8.636c10.176 8.241 44.061 18.767 65.457-17.508c3.02-5.206-3.473-11.356-4.613-12.159ZM28.937 112.92c-10.338 0-16.967-9.559-16.967-19.866c0-10.306 6.085-19.865 16.423-19.865c4.652 0 7.24.512 10.863 3.663c.657 2.589 2.519 8.561 3.425 11.273c1.214 3.629 2.658 6.718 4.114 10.08c-2.08 8.623-8.899 14.715-17.858 14.715Zm25.192-35.765c-.43-.685-.34-.264-.821-.911c-1.895-5.155-5.547-16.661-5.97-29.73c-.478-14.784 1.986-32.113 9.25-32.113c4.922 0 10.153 35.12-2.46 62.754ZM199.69 61.751c-1.166-8.773-1.227-47.883 8.162-46.806c5.184 2.1-3.287 39.005-8.162 46.806Zm68.559 0c-1.166-8.773-1.227-47.883 8.162-46.806c5.184 2.1-3.287 39.005-8.162 46.806Zm68.015.545c-1.167-8.774-1.227-47.884 8.161-46.807c5.184 2.1-3.287 39.006-8.161 46.807Zm75.088-49.64c8.584-.89 8.23 36.596-9 60.262c-2.222-8.554-5.629-57.325 9-60.263Zm36.08 80.662c-2.757-13.927 4.367-23.074 11.711-24.077c2.567-.41 6.287 1.253 7.029 4.362c1.22 5.859-.177 14.55-16.614 25.577c.024.094-1.511-2.76-2.125-5.862Z">
+                            </path>
+                        </svg><svg viewBox="0 0 512 139" width="1.2em" height="1.2em"
+                            class="max-h-6 sm:max-h-8 md:max-h-10 h-auto w-full object-contain object-left"
+                            title="Github">
+                            <path fill="#11110F"
+                                d="M98.696 59.312h-43.06a2.015 2.015 0 0 0-2.013 2.014v21.053c0 1.111.902 2.015 2.012 2.015h16.799v26.157s-3.772 1.286-14.2 1.286c-12.303 0-29.49-4.496-29.49-42.288c0-37.8 17.897-42.773 34.698-42.773c14.543 0 20.809 2.56 24.795 3.794c1.253.384 2.412-.863 2.412-1.975l4.803-20.342c0-.52-.176-1.146-.769-1.571C93.064 5.527 83.187 0 58.233 0C29.488 0 0 12.23 0 71.023c0 58.795 33.76 67.556 62.21 67.556c23.555 0 37.844-10.066 37.844-10.066c.59-.325.653-1.148.653-1.526V61.326c0-1.11-.9-2.014-2.01-2.014Zm221.8-51.953c0-1.12-.888-2.024-1.999-2.024h-24.246a2.016 2.016 0 0 0-2.008 2.024l.006 46.856h-37.792V7.36c0-1.12-.892-2.024-2.001-2.024H228.21a2.014 2.014 0 0 0-2.003 2.024v126.872c0 1.12.9 2.03 2.003 2.03h24.245c1.109 0 2-.91 2-2.03V79.964h37.793l-.066 54.267c0 1.12.9 2.03 2.008 2.03h24.304c1.11 0 1.998-.91 2-2.03V7.36ZM144.37 24.322c0-8.73-7-15.786-15.635-15.786c-8.627 0-15.632 7.055-15.632 15.786c0 8.72 7.005 15.795 15.632 15.795c8.635 0 15.635-7.075 15.635-15.795Zm-1.924 83.212V48.97a2.015 2.015 0 0 0-2.006-2.021h-24.169c-1.109 0-2.1 1.144-2.1 2.256v83.905c0 2.466 1.536 3.199 3.525 3.199h21.775c2.39 0 2.975-1.173 2.975-3.239v-25.536ZM413.162 46.95h-24.06c-1.104 0-2.002.909-2.002 2.028v62.21s-6.112 4.472-14.788 4.472c-8.675 0-10.977-3.937-10.977-12.431v-54.25c0-1.12-.897-2.03-2.001-2.03h-24.419c-1.102 0-2.005.91-2.005 2.03v58.358c0 25.23 14.063 31.403 33.408 31.403c15.87 0 28.665-8.767 28.665-8.767s.61 4.62.885 5.168c.276.547.994 1.098 1.77 1.098l15.535-.068c1.102 0 2.005-.911 2.005-2.025l-.008-85.168a2.02 2.02 0 0 0-2.008-2.028Zm55.435 68.758c-8.345-.254-14.006-4.041-14.006-4.041V71.488s5.585-3.423 12.436-4.035c8.664-.776 17.013 1.841 17.013 22.51c0 21.795-3.768 26.096-15.443 25.744Zm9.49-71.483c-13.665 0-22.96 6.097-22.96 6.097V7.359a2.01 2.01 0 0 0-2-2.024h-24.315a2.013 2.013 0 0 0-2.004 2.024v126.872c0 1.12.898 2.03 2.007 2.03h16.87c.76 0 1.335-.39 1.76-1.077c.419-.682 1.024-5.85 1.024-5.85s9.942 9.422 28.763 9.422c22.096 0 34.768-11.208 34.768-50.315s-20.238-44.217-33.913-44.217ZM212.229 46.73h-18.187l-.028-24.027c0-.909-.468-1.364-1.52-1.364H167.71c-.964 0-1.481.424-1.481 1.35v24.83s-12.42 2.998-13.26 3.24a2.013 2.013 0 0 0-1.452 1.934v15.603c0 1.122.896 2.027 2.005 2.027h12.707v37.536c0 27.88 19.556 30.619 32.753 30.619c6.03 0 13.243-1.937 14.434-2.376c.72-.265 1.138-1.01 1.138-1.82l.02-17.164c0-1.119-.945-2.025-2.01-2.025c-1.06 0-3.77.431-6.562.431c-8.933 0-11.96-4.154-11.96-9.53l-.001-35.67h18.188a2.014 2.014 0 0 0 2.006-2.028V48.753c0-1.12-.897-2.022-2.006-2.022Z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 512 130" width="1.2em" height="1.2em"
+                            class="max-h-6 sm:max-h-8 md:max-h-10 h-auto w-full object-contain object-left"
+                            title="Slack">
+                            <path
+                                d="m163.593 101.885l6.387-14.835c6.902 5.151 16.07 7.83 25.136 7.83c6.696 0 10.92-2.576 10.92-6.49c-.103-10.92-40.074-2.37-40.383-29.773c-.103-13.907 12.26-24.621 29.772-24.621c10.405 0 20.81 2.575 28.227 8.447l-5.975 15.144c-6.799-4.327-15.246-7.417-23.282-7.417c-5.46 0-9.065 2.575-9.065 5.872c.103 10.714 40.383 4.842 40.795 31.008c0 14.217-12.053 24.21-29.36 24.21c-12.672 0-24.313-2.988-33.172-9.375Zm245.08-20.192l17.616 9.787c-6.593 11.847-19.161 19.78-33.687 19.78c-21.325 0-38.632-17.307-38.632-38.632s17.307-38.632 38.632-38.632c14.423 0 27.094 8.035 33.687 19.78l-17.616 9.786c-3.194-5.563-9.169-9.374-16.071-9.374c-10.199 0-18.44 8.241-18.44 18.44c0 10.199 8.241 18.44 18.44 18.44c6.902 0 12.877-3.812 16.07-9.375ZM234.984 1.957h22.046v107.86h-22.046V1.957Zm199.958 0h22.046v63.356l24.93-29.772h26.991l-30.802 35.85l33.275 38.426h-28.227L456.988 77.47v32.347h-22.046V1.957ZM322.55 81.9V63.665c-3.194-5.357-9.787-9.477-17.204-9.477c-10.2 0-18.44 8.241-18.44 18.44c0 10.199 8.24 18.44 18.44 18.44c7.417 0 14.01-3.915 17.204-9.169Zm0-46.358h22.046v74.173H322.55v-8.756c-3.606 6.078-12.569 10.302-21.943 10.302c-19.368 0-34.614-17.307-34.614-38.735s15.246-38.529 34.614-38.529c9.374 0 18.337 4.224 21.943 10.302V35.54Z">
+                            </path>
+                            <path fill="#E01E5A"
+                                d="M27.3 81.796c0 7.52-6.078 13.599-13.599 13.599A13.585 13.585 0 0 1 .103 81.796c0-7.52 6.078-13.598 13.598-13.598H27.3v13.598Zm6.799 0c0-7.52 6.078-13.598 13.598-13.598c7.52 0 13.599 6.078 13.599 13.598v33.996c0 7.52-6.078 13.599-13.599 13.599A13.585 13.585 0 0 1 34.1 115.792V81.796Z">
+                            </path>
+                            <path fill="#36C5F0"
+                                d="M47.697 27.197A13.585 13.585 0 0 1 34.1 13.598C34.099 6.078 40.177 0 47.697 0s13.599 6.078 13.599 13.598v13.599H47.697Zm0 6.902c7.52 0 13.599 6.078 13.599 13.598c0 7.52-6.078 13.599-13.599 13.599H13.598A13.585 13.585 0 0 1 0 47.697C0 40.177 6.078 34.1 13.598 34.1h34.1Z">
+                            </path>
+                            <path fill="#2EB67D"
+                                d="M102.194 47.697c0-7.52 6.078-13.598 13.598-13.598c7.52 0 13.599 6.078 13.599 13.598c0 7.52-6.078 13.599-13.599 13.599h-13.598V47.697Zm-6.8 0c0 7.52-6.077 13.599-13.598 13.599a13.585 13.585 0 0 1-13.598-13.599V13.598C68.198 6.078 74.276 0 81.796 0c7.52 0 13.599 6.078 13.599 13.598v34.1Z">
+                            </path>
+                            <path fill="#ECB22E"
+                                d="M81.796 102.194c7.52 0 13.599 6.078 13.599 13.598c0 7.52-6.078 13.599-13.599 13.599a13.585 13.585 0 0 1-13.598-13.599v-13.598h13.598Zm0-6.8a13.585 13.585 0 0 1-13.598-13.598c0-7.52 6.078-13.598 13.598-13.598h34.1c7.52 0 13.598 6.078 13.598 13.598c0 7.52-6.078 13.599-13.599 13.599H81.796Z">
+                            </path>
+                        </svg>
+                        <!--]-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-secondary py-16 sm:py-24">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:max-w-none">
+                    <div class="text-center">
+                        <h2 class="text-4xl font-extrabold tracking-tight text-slate-800 sm:text-5xl"> Big Numbers<span
+                                class="text-white">.</span></h2>
+                        <p class="mt-4 text-lg leading-8 text-gray-700"> A few reasons why entrepreneurs, creators and
+                            our awesome partners love Mixo! </p>
+                    </div>
+                    <dl
+                        class="mt-16 grid grid-cols-1 gap-0.5 lg:gap-1 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+                        <!--[-->
+                        <div class="flex flex-col bg-black/5 p-8">
+                            <dt class="text-sm font-semibold leading-6 text-gray-700">Creators</dt>
+                            <dd class="order-first text-3xl font-extrabold tracking-tight text-slate-800">170k+</dd>
+                        </div>
+                        <div class="flex flex-col bg-black/5 p-8">
+                            <dt class="text-sm font-semibold leading-6 text-gray-700">Ideas generated</dt>
+                            <dd class="order-first text-3xl font-extrabold tracking-tight text-slate-800">800k+</dd>
+                        </div>
+                        <div class="flex flex-col bg-black/5 p-8">
+                            <dt class="text-sm font-semibold leading-6 text-gray-700">Sites launched</dt>
+                            <dd class="order-first text-3xl font-extrabold tracking-tight text-slate-800">150k+</dd>
+                        </div>
+                        <div class="flex flex-col bg-black/5 p-8">
+                            <dt class="text-sm font-semibold leading-6 text-gray-700">Subscribers</dt>
+                            <dd class="order-first text-3xl font-extrabold tracking-tight text-slate-800">550k+</dd>
+                        </div>
+                        <!--]-->
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div id="signup" class="relative py-12 sm:py-20 md:py-24 lg:py-32 overflow-hidden" data-v-1f6d0be6>
+            <div aria-hidden="true" class="hidden sm:block" data-v-1f6d0be6>
+                <div class="absolute inset-y-0 left-0 w-1/2 top-10 bg-gray-50 rounded-r-3xl bg-block-height"
+                    data-v-1f6d0be6></div><svg class="absolute -ml-3 top-8 left-1/2" width="404" height="392"
+                    fill="none" viewBox="0 0 404 392" data-v-1f6d0be6>
+                    <defs data-v-1f6d0be6>
+                        <pattern id="8228f071-bcee-4ec8-905a-2a059a2cc4fb" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse" data-v-1f6d0be6>
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"
+                                data-v-1f6d0be6></rect>
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="392" fill="url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)" data-v-1f6d0be6>
+                    </rect>
+                </svg>
+            </div>
+            <div class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8" data-v-1f6d0be6>
+                <div class="relative px-6 py-10 overflow-hidden bg-white border border-gray-300 shadow-xl rounded-2xl sm:px-12 sm:py-20"
+                    data-v-1f6d0be6>
+                    <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0" data-v-1f6d0be6><svg
+                            class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360" data-v-1f6d0be6>
+                            <path class="text-rose-100 text-opacity-40" fill="currentColor"
+                                d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" data-v-1f6d0be6>
+                            </path>
+                            <path class="text-rose-200 text-opacity-40" fill="currentColor"
+                                d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" data-v-1f6d0be6>
+                            </path>
+                        </svg></div>
+                    <div class="relative" data-v-1f6d0be6>
+                        <div class="flex flex-wrap justify-center w-full mx-auto sm:max-w-3xl" data-v-1f6d0be6><img
+                                src="/img/avatars/ben.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6><img
+                                src="/img/avatars/beth.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6><img
+                                src="/img/avatars/claire.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6><img
+                                src="/img/avatars/iwan.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6><img
+                                src="/img/avatars/lori.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6><img
+                                src="/img/avatars/mali.webp" class="user-avatar" alt="User avatar" data-v-1f6d0be6><img
+                                src="/img/avatars/mi.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6><img
+                                src="/img/avatars/nim.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6>
+                            <img src="/img/avatars/san.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6><img
+                                src="/img/avatars/sanjid.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6><img
+                                src="/img/avatars/steph.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6><img
+                                src="/img/avatars/zak.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6><img
+                                src="/img/avatars/judith.jpg" class="user-avatar" alt="User avatar" data-v-1f6d0be6>
+                        </div>
+                        <div class="mt-6 sm:mt-12 sm:text-center" data-v-1f6d0be6>
+                            <h2 class="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl md:text-5xl md:leading-tight md:max-w-4xl md:mx-auto"
+                                data-v-1f6d0be6> Join our community of makers turning their ideas into startups<span
+                                    class="text-gradient" data-v-1f6d0be6>.</span></h2>
+                            <p class="max-w-2xl mx-auto mt-6 italic text-gray-700 sm:text-lg" data-v-1f6d0be6> “ <strong
+                                    data-v-1f6d0be6>I was able to create an amazing website within five
+                                    minutes.</strong> Everything was done for me, with just minor input from me. Truly
+                                amazing! ” - Dianne D </p>
+                        </div>
+                        <div class="flex" data-v-1f6d0be6>
+                            <a to
+                                class="ui-button ui-button-base ui-button-primary mx-auto mt-6 sm:mt-12 mx-auto mt-6 sm:mt-12"
+                                href="https://app.mixo.io" data-v-1f6d0be6>
+                                <!--[-->Get Started for Free
+                                <!--]-->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t astro-SZ7XMLTE">
+        <div class="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8 astro-SZ7XMLTE">
+            <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12 astro-SZ7XMLTE" aria-label="Footer">
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="/pricing" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Pricing</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="/features" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Features</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="/affiliates" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Affiliates</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="https://app.mixo.io/ai-website-builder"
+                        class="text-sm leading-6 footer-link astro-SZ7XMLTE">AI Website Builder</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="https://status.mixo.io" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Status</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="https://help.mixo.io" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Help</a>
+                </div>
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="/privacy" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Privacy</a>
+                </div>
+
+                <div class="pb-6 astro-SZ7XMLTE">
+                    <a href="/terms" class="text-sm leading-6 footer-link astro-SZ7XMLTE">Terms</a>
+                </div>
+            </nav>
+            <div class="mt-10 flex justify-center space-x-10 astro-SZ7XMLTE">
+                <a href="https://twitter.com/MixoTeam" class="text-gray-400 hover:text-gray-500 astro-SZ7XMLTE"
+                    target="_blank">
+                    <span class="sr-only astro-SZ7XMLTE">Twitter</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 astro-SZ7XMLTE" fill="currentColor"
+                        aria-hidden="true" viewBox="0 0 16 16">
+                        <path fill="currentColor"
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334c0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518a3.301 3.301 0 0 0 1.447-1.817a6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429a3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218a3.203 3.203 0 0 1-.865.115a3.23 3.23 0 0 1-.614-.057a3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                            class="astro-SZ7XMLTE"></path>
+                    </svg>
+                </a>
+
+                <a href="https://www.youtube.com/@mixoapp" class="text-gray-400 hover:text-gray-500 astro-SZ7XMLTE"
+                    target="_blank">
+                    <span class="sr-only astro-SZ7XMLTE">YouTube</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 astro-SZ7XMLTE" fill="currentColor"
+                        aria-hidden="true" viewBox="0 0 16 16">
+                        <path fill="currentColor"
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104l.022.26l.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105l-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006l-.087-.004l-.171-.007l-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103l.003-.052l.008-.104l.022-.26l.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007l.172-.006l.086-.003l.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                            class="astro-SZ7XMLTE"></path>
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/company/mixo-io/"
+                    class="text-gray-400 hover:text-gray-500 astro-SZ7XMLTE" target="_blank">
+                    <span class="sr-only astro-SZ7XMLTE">LinkedIn</span>
+
+                    <svg class="h-5 w-5 astro-SZ7XMLTE" fill="currentColor" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill="currentColor"
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248c-.015-.709-.52-1.248-1.342-1.248c-.822 0-1.359.54-1.359 1.248c0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586c.173-.431.568-.878 1.232-.878c.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252c-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                            class="astro-SZ7XMLTE"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <p class="mt-10 text-center text-xs leading-5 text-gray-500 astro-SZ7XMLTE">
+                &copy; 2023 Mixo.io All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Crisp -->
+    <script type="text/javascript">
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "211a89ee-af11-4718-937e-be995ea69b2b";
+        (function () {
+            d = document;
+            s = d.createElement("script");
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+    </script>
+
+    <!-- Rewardful -->
+    <script>
+        (function (w, r) {
+            w._rwq = r;
+            w[r] =
+                w[r] ||
+                function () {
+                    (w[r].q = w[r].q || []).push(arguments);
+                };
+        })(window, "rewardful");
+    </script>
+    <script async src="https://r.wdfl.co/rw.js" data-rewardful="35dd66"></script>
+
+    <!-- GTM -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHGL8M7FHL"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            window.dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-JHGL8M7FHL");
+    </script>
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon="{&quot;token&quot;: &quot;331da11241b54612b9793dbc3ff2612a&quot;}"></script>
+
+
+    <!-- Cloudflare Pages Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "be3f4f3bd8504319a187742a2509680c"}'></script>
+    <!-- Cloudflare Pages Analytics -->
+</body>
+
+</html>

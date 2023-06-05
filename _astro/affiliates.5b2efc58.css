@@ -1,0 +1,15 @@
+.faqs a {
+    --tw-text-opacity: 1;
+    color: rgb(255 0 102 / var(--tw-text-opacity))
+}
+
+.faqs a:hover {
+    text-decoration-line: underline
+}
+
+.faqs ul {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    list-style-position: inside;
+    list-style-type: disc
+}

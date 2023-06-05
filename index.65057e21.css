@@ -1,0 +1,52 @@
+.hero-bg-block {
+    height: 95%
+}
+
+.user-avatar[data-v-1f6d0be6] {
+    margin: .5rem .25rem;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 9999px;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity))
+}
+
+@media (min-width: 640px) {
+    .user-avatar[data-v-1f6d0be6] {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        height: 3.5rem;
+        width: 3.5rem
+    }
+}
+
+.bg-block-height[data-v-1f6d0be6] {
+    height: 90%
+}
+
+:root {
+    --astro-gradient: linear-gradient( 0deg, rgb(236, 22, 107), #f06, rgb(223, 20, 101))
+}
+
+.text-gradient {
+    font-weight: 900;
+    background-image: var(--astro-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position-y: 100%;
+    border-radius: .4rem;
+    animation: pulse 4s ease-in-out infinite
+}
+
+@keyframes pulse {
+    0%,
+    to {
+        background-position-y: 0%
+    }
+    50% {
+        background-position-y: 80%
+    }
+}

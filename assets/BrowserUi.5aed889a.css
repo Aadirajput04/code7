@@ -1,0 +1,7 @@
+.browser-ui-nav-control {
+    height: .75rem;
+    width: .75rem;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(203 213 225 / var(--tw-bg-opacity))
+}

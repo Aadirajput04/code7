@@ -1,0 +1,5 @@
+.flex-col-center:where(.astro-FSSWMXCN) {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
